@@ -118,7 +118,6 @@ header {
 
 }
 .bg-stuff, .my-bio {
-    width: auto;
     border-radius: 8px;
     display: block;  
 }
@@ -135,7 +134,6 @@ header {
 }
 
 .my-bio h3 {
-    height: auto;
 font-size: 1rem;
 padding: 8px;
 
