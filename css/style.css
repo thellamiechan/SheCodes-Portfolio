@@ -54,6 +54,18 @@ select {
     font: inherit;
 }
 
+
+/* Global Styles */
+
+label, input, textarea, select {
+	display:block;
+	width: 100%;
+}
+input, textarea, select {
+	padding: 8px
+}
+
+
 /* header */
 
 nav {
@@ -80,7 +92,7 @@ header {
     background-color: var(--ferngreen);
     justify-content: center;
     /* border: 3px solid var(--polygreen); */
-    border-radius: 8px;
+    border-radius: 16px;
     margin: 10px;
     flex-grow: 1; /* Allow the child div to grow to fill available space */
     flex-basis: 75%; /* Set the initial width of the child div to 75% */
@@ -96,12 +108,12 @@ header {
     font-size: 3vw;
     margin-bottom: 24px;
     color: var(--white);
- }
+}
 
 .juliephoto {
     width: auto;
     /* border: var(--polygreen); */
-    border-radius: 8px;   
+    border-radius: 16px;   
     display: block;
 }
 
@@ -109,34 +121,198 @@ header {
     margin: 10px;
 }
 
+
+
 /* project section */
 
 #projects {
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
-.bg-stuff, .my-bio {
-    border-radius: 8px;
-    display: block;  
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the child div to grow to fill available space */
+    flex-basis: 75%; /* Set the initial width of the child div to 75% */
+    min-width: 50%; /* Set the minimum width of the child div to 50% */
+    margin: 10px;
+    
+    /* border: 3px solid blue; */
+}
+
+.bg-stuff,
+.my-icons, .socials {
+    border-radius: 16px;
 }
 
 .bg-stuff {
-    max-width: 75%;
-    height: auto;
+    height: 50vh;
+    background-size: cover;
+    background-repeat:no-repeat;
+    border: 3px solid var(--polygreen);
+    margin: 10px;
+}
+.bg-stuff p {
+background-image: url(../images/tealeavesbackground.jpg);
+width: 100%;
+height: 100%;
+border-radius: 16px;
+
+}
+
+.link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: var(--flax);
+    border: 3px solid var(--polygreen);
+    border-radius: 16px;
+}
+
+.link a {
+    padding-top: 8px;
+    text-decoration: none;
+    color: var(--black);
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: var(--flax);
+    border: 3px solid var(--polygreen);
+}
+
+.socials {
+    max-width: 60%;
+    min-width: 40%;
+    align-self: center;
+}
+.my-icons img {
+    max-width: 40px;
+}
+.socials img {
+    max-width: 40px;
 }
 
 .my-bio {
+    margin-top: 16px;
+    margin-right: 10px;
     background-color: var(--avocado);
-    text-align: left;
-    text-decoration: none;
-}
+    border: 3px solid var(--polygreen);
+    border-radius: 16px;
+} 
 
 .my-bio h3 {
-font-size: 1rem;
-padding: 8px;
-
+    color: var(--white);
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
 }
 
+.my-bio p {
+    color: var(--white);
+    text-align: center;
+    padding: 3px;
+}
 
+/* page two */
+
+#hero2 {
+    width: 95%;
+    height: 240px;
+    background-color: var(--avocado);
+    border: 3px solid var(--polygreen); 
+    border-radius: 16px;
+    margin: 16px;
+    padding: 30px;
+    /* border: 3px solid blue;  */
+}
+
+.coding {
+    align-items: center;
+    flex-grow: 1; /* Allow the child div to grow to fill available space */
+    flex-basis: 100%; /* Set the initial width of the child div to 100% */
+    min-width: 50%; /* Set the minimum width of the child div to 50% */
+} 
+
+
+.coding h2, h3 {
+    
+    
+}
+#articles {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media(max-width: 768px){
+   #articles {
+    display: block;
+    flex-direction: column;
+   }
+}
+.books {
+    width: 50%;
+    background-color: var(--flax);
+    border: 3px solid var(--polygreen); 
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.books h2 {
+    flex-direction: column;
+    text-align: center;
+    text-decoration: var(--polygreen);
+}
+
+@media(max-width: 768px){
+    .books {
+        min-width: 95%;
+    }
+}
+.tea {
+    width: 50%;
+    background-color: var(--ferngreen);
+    border: 3px solid var(--polygreen); 
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.tea h2 {
+    flex-direction: column;
+    text-align: center;
+    color: var(--white)
+}
+.tea p {
+    text-decoration: var(--white);
+    padding: 36px;
+}
+@media(max-width: 768px){
+    .tea {
+        min-width: 95%;
+    }
+}
+
+/* contact form */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30%;
+    max-width: 60%;
+}
+/* Footer */
+
+footer {
+	padding: 16px;
+	text-align: center;
+}
