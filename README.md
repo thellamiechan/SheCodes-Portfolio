@@ -38,3 +38,5 @@ You can do this by saving the images in a folder in your repo, and including the
 ![ {{ screen shot p2 tablet }} ]![screen shot p2 tablet](readme-photos/scn-shot-p2-tablet.png)
 ![ {{ screen shot p1 pc }} ]![screen shot p1 pc](readme-photos/scn-shot-pc-p1.png)
 ![ {{ screen shot p2 pc }} ]![screen shot p2 pc](readme-photos/scn-shot-pc-p2.png)
+![ {{ wireframe layout 2 pages}} ]![wireframe 2 page](readme-photos/Wireframe-layout-2-page.png)
+![ {{ screen shot p1 phone }} ]![wireframep 2p](readme-photos/figma-wireframe-p2.png)
