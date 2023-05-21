@@ -4,20 +4,20 @@
 ## Project Requirements
 
 ### Content
-{{ Add a short paragraph describing the features below. }}
+{{ I added a photo of myself and put the bio on the right side of the screen. The photo gallery is decorative, but the "buttons" underneath contain all the links. Page two is linked in the top yellow button and linkedin and git in the second.}}
 - [x] At least one profile picture
 - [ ] Biography (at least 100 words)
-- [ ] Functional Contact Form
-- [ ] "Projects" section
+- [x] Functional Contact Form
+- [x] "Projects" section
 - [ ] Links to external sites, e.g. GitHub and LinkedIn.
 
 ### Technical
-{{ Add a short paragraph describing the features below. }}
-- [ ] At least 2 web pages.
-- [ ] Version controlled with Git
-- [ ] Deployed on GitHub pages.
-- [ ] Implements responsive design principles.
-- [ ] Uses semantic HTML.
+{{ I added the second page to contain all the projects, mostly the ones I will make in this course. To start with the boxes simply contain the logos and list of languages. As projects get linked during the course, this page will gain more interest. I added a contact me box on the 2nd page, the form emails me. }}
+- [x] At least 2 web pages.
+- [x] Version controlled with Git
+- [x] Deployed on GitHub pages.
+- [x] Implements responsive design principles.
+- [x] Uses semantic HTML.
 
 ### Bonus (optional)
 {{ Add a short paragraph describing the features below, if you included any. }}

@@ -231,21 +231,33 @@ border-radius: 16px;
     border-radius: 16px;
     margin: 16px;
     padding: 30px;
+    position: relative;
+
     /* border: 3px solid blue;  */
 }
 
 .coding {
-    align-items: center;
+    
     flex-grow: 1; /* Allow the child div to grow to fill available space */
     flex-basis: 100%; /* Set the initial width of the child div to 100% */
     min-width: 50%; /* Set the minimum width of the child div to 50% */
 } 
 
-
-.coding h2, h3 {
-    
-    
+.langlogobg {
+    background-image: url(../images/langlogobg.png);
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 2;
 }
+
+.coding h2 {
+}
+
 #articles {
     height: 100vh;
     display: flex;
@@ -262,6 +274,9 @@ border-radius: 16px;
 .books {
     width: 50%;
     background-color: var(--flax);
+    background-image: url(../images/bookbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 3px solid var(--polygreen); 
     border-radius: 16px;
     margin: 16px;
@@ -281,6 +296,9 @@ border-radius: 16px;
 .tea {
     width: 50%;
     background-color: var(--ferngreen);
+    background-image: url(../images/teabg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     border: 3px solid var(--polygreen); 
     border-radius: 16px;
     margin: 16px;
@@ -306,7 +324,6 @@ border-radius: 16px;
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding-left: 30%;
     max-width: 60%;
 }
