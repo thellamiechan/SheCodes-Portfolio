@@ -205,6 +205,10 @@ border-radius: 16px;
     max-width: 40px;
 }
 
+.logo1 {
+    
+}
+
 .my-bio {
     margin-top: 16px;
     margin-right: 10px;
@@ -231,6 +235,7 @@ border-radius: 16px;
 @media(max-width: 768px) {
     .my-bio p {
        font-size: .75rem; 
+       word-wrap: break-word;
     }
 }
 
